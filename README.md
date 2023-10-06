@@ -10,17 +10,6 @@ This is a pure python implementation of the PDK.
 
 If you don't have python installed on your system you can [download the gdsfactory installer](https://github.com/gdsfactory/gdsfactory/releases) that includes python3, miniconda and all gdsfactory plugins.
 
-### Installation for new gdsfactory users
-
-If you already have python installed. Open Anaconda Prompt and then install the ubcpdk using pip.
-
-![anaconda prompt](https://i.imgur.com/Fyal5sT.png)
-
-```
-pip install gf180 --upgrade
-```
-
-Then you need to restart Klayout to make sure the new technology installed appears.
 
 ### Installation for developers
 
