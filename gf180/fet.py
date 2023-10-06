@@ -1031,8 +1031,8 @@ def nfet(
 
     con_size = 0.22
     con_sp = 0.28
-    con_comp_enc = 0.07
-    con_pl_enc = 0.07
+    con_comp_enc = 0.075
+    con_pl_enc = 0.08
     dg_enc_cmp = 0.24
     dg_enc_poly = 0.4
 
@@ -1044,7 +1044,7 @@ def nfet(
     # gds components to store a single instance and the generated device
     c = gf.Component("sky_nfet_dev")
 
-    c_inst = gf.Component("dev_temp")
+    c_inst = gf.Component("dev_temp1")
 
     # generating sd diffusion
 
@@ -1145,7 +1145,7 @@ def nfet(
 
     pc_size = (pc_x, con_pl_enc + con_size + con_pl_enc)
 
-    c_pc = gf.Component("poly con")
+    c_pc = gf.Component("poly con1")
 
     rect_pc = c_pc.add_ref(gf.components.rectangle(size=pc_size, layer=layer["poly2"]))
 
@@ -1156,7 +1156,7 @@ def nfet(
         metal_level=1,
         li_enc_dir="H",
     )
-    c_pc.add_ref(poly_con)
+    #c_pc.add_ref(poly_con)
 
     if nf == 1:
         poly = c_inst.add_ref(
@@ -1549,8 +1549,8 @@ def pfet(
 
     con_size = 0.22
     con_sp = 0.28
-    con_comp_enc = 0.07
-    con_pl_enc = 0.07
+    con_comp_enc = 0.075
+    con_pl_enc = 0.08
     dg_enc_cmp = 0.24
     dg_enc_poly = 0.4
 
@@ -1674,7 +1674,7 @@ def pfet(
         metal_level=1,
         li_enc_dir="H",
     )
-    c_pc.add_ref(poly_con)
+    #c_pc.add_ref(poly_con)
 
     if nf == 1:
         poly = c_inst.add_ref(
