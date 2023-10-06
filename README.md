@@ -6,11 +6,6 @@ This is a pure python implementation of the PDK.
 
 ## Installation
 
-### Installation for new python users
-
-If you don't have python installed on your system you can [download the gdsfactory installer](https://github.com/gdsfactory/gdsfactory/releases) that includes python3, miniconda and all gdsfactory plugins.
-
-
 ### Installation for developers
 
 For developers you need to `git clone` the GitHub repository, fork it, git add, git commit, git push and merge request your changes.
